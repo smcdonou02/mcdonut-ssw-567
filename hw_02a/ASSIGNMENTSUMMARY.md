@@ -119,3 +119,4 @@ I pledge my honor that I have abided by the Stevens Honor System. - SAM
 | Defects Found  | 3 | 5 | 0 | 0 |
 | Defects Fixed  | 0 | 0 | 5 | 0 |
 
+I decided there was a sufficent number of test cases once I added more test cases and no defects were found. I went through the original file being tested to make sure each line was being tested, and that the test logic would hit that line. 
