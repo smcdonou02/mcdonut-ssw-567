@@ -27,10 +27,10 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
 
     def testScaleneTriangles(self):
-        self.assertEqual(classifyTriangle(5,7,9),'Scalene', "5,7,9 should be scalene")
+        self.assertEqual(classifyTriangle(5,6,7),'Scalene', "5,7,9 should be scalene")
 
     def testIsocelesTriangles(self):
-        self.assertEqual(classifyTriangle(5,5,10), 'Isoceles', '5,5,10 should be isoceles')
+        self.assertEqual(classifyTriangle(5,5,8), 'Isoceles', '5,5,10 should be isoceles')
 
     def testInvalidInputA(self): 
         self.assertEqual(classifyTriangle(201,4,5),'InvalidInput','Side A should not be greater than 200')
@@ -59,7 +59,19 @@ class TestTriangles(unittest.TestCase):
     def testInvalidInputNotIntC(self): 
         self.assertEqual(classifyTriangle(3,4,"5"),'InvalidInput','Side C should be an integer')
 
+    def testNotATriangle1(self):
+        self.assertEqual(classifyTriangle(5,5,10), 'NotATriangle', 'the sum of any two sides must be strictly less than the third side')
+    
+    def testNotATriangle2(self):
+        self.assertEqual(classifyTriangle(5,2,12), 'NotATriangle', 'the sum of any two sides must be strictly less than the third side')
 
+    def testNoInput1(self):
+        with self.assertRaises(TypeError): 
+            classifyTriangle(None, None, None)
+
+    def testNoInput2(self):
+        with self.assertRaises(TypeError): 
+            classifyTriangle()
 
 if __name__ == '__main__':
     print('Running unit tests')
