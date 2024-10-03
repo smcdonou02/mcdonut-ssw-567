@@ -1,5 +1,7 @@
 # mcdonut-ssw-567
-## Deliverable 3
+## Description
+README file for assignments in SSW 567
+### Assignment 1 Deliverable 3
 Challenges: 
 - Learning the syntax for unit testing in python was challenging because I am used to unit testing in Java.
 - Getting used to Git commands again after using Visual Studio source control framework all summer was challenging.
