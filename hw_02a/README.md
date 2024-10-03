@@ -31,7 +31,7 @@ I pledge my honor that I have abided by the Stevens Honor System. - SAM
 
 ## Detailed Results 
 
-### Test Report
+### Test Report 1 
 
 | Test ID  |  Input  | Expected Results | Actual Result | Pass or Fail |
 | -------- | ------- | ---------------- | ------------- | ------------ |
@@ -50,12 +50,70 @@ I pledge my honor that I have abided by the Stevens Honor System. - SAM
 | testInvalidNotIntB | classifyTriangle(3,"4",5) | 'InvalidInput' | TypeError: '>' not supported between instances of 'str' and 'int' | Fail |
 | testInvalidNotIntC | classifyTriangle(3,4,"5") | 'InvalidInput' | TypeError: '>' not supported between instances of 'str' and 'int' | Fail |
 
+### Test Report 2
+| Test ID  |  Input  | Expected Results | Actual Result | Pass or Fail |
+| -------- | ------- | ---------------- | ------------- | ------------ |
+| testRight1 | classifyTriangle(3,4,5) | 'Right' | 'Right' | Pass |
+| testRight2 | classifyTriangle(5,3,4) | 'Right' | 'Right' | Pass |
+| testEquilateral | classifyTriangle(1,1,1) | 'Equilateral' | 'Equilateral' | Pass |
+| testScalene | classifyTriangle(5,7,9) | 'Scalene' | 'NotATriangle' | Fail |
+| testIsoceles | classifyTriangle(5,5,10) | 'Isoceles' | 'NotATriangle' | Fail |
+| testInvalid200A | classifyTriangle(201,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200B | classifyTriangle(3,201,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200C | classifyTriangle(3,4,201) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegA | classifyTriangle(-3,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegB | classifyTriangle(3,-4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegC | classifyTriangle(3,4,-5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntA | classifyTriangle("3",4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntB | classifyTriangle(3,"4",5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntC | classifyTriangle(3,4,"5") | 'InvalidInput' | 'InvalidInput' | Pass |
+
+### Test Report 3
+| Test ID  |  Input  | Expected Results | Actual Result | Pass or Fail |
+| -------- | ------- | ---------------- | ------------- | ------------ |
+| testRight1 | classifyTriangle(3,4,5) | 'Right' | 'Right' | Pass |
+| testRight2 | classifyTriangle(5,3,4) | 'Right' | 'Right' | Pass |
+| testEquilateral | classifyTriangle(1,1,1) | 'Equilateral' | 'Equilateral' | Pass |
+| testScalene | classifyTriangle(5,7,9) | 'Scalene' | 'NotATriangle' | Fail |
+| testIsoceles | classifyTriangle(5,5,10) | 'Isoceles' | 'NotATriangle' | Fail |
+| testInvalid200A | classifyTriangle(201,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200B | classifyTriangle(3,201,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200C | classifyTriangle(3,4,201) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegA | classifyTriangle(-3,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegB | classifyTriangle(3,-4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegC | classifyTriangle(3,4,-5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntA | classifyTriangle("3",4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntB | classifyTriangle(3,"4",5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntC | classifyTriangle(3,4,"5") | 'InvalidInput' | 'InvalidInput' | Pass |
+
+### Test Report 4
+| Test ID  |  Input  | Expected Results | Actual Result | Pass or Fail |
+| -------- | ------- | ---------------- | ------------- | ------------ |
+| testRight1 | classifyTriangle(3,4,5) | 'Right' | 'Right' | Pass |
+| testRight2 | classifyTriangle(5,3,4) | 'Right' | 'Right' | Pass |
+| testEquilateral | classifyTriangle(1,1,1) | 'Equilateral' | 'Equilateral' | Pass |
+| testScalene | classifyTriangle(5,7,9) | 'Scalene' | 'Scalene' | Pass |
+| testIsoceles | classifyTriangle(5,5,10) | 'Isoceles' | 'Isoceles' | Pass |
+| testInvalid200A | classifyTriangle(201,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200B | classifyTriangle(3,201,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalid200C | classifyTriangle(3,4,201) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegA | classifyTriangle(-3,4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegB | classifyTriangle(3,-4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNegC | classifyTriangle(3,4,-5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntA | classifyTriangle("3",4,5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntB | classifyTriangle(3,"4",5) | 'InvalidInput' | 'InvalidInput' | Pass |
+| testInvalidNotIntC | classifyTriangle(3,4,"5") | 'InvalidInput' | 'InvalidInput' | Pass |
+| testNotValid1 | classifyTriangle(5,5,10) | 'NotATriangle' | 'NotATriangle' | Pass |
+| testNotValid2 | classifyTriangle(5,2,12) | 'NotATriangle' | 'NotATriangle' | Pass |
+| testNoInput1 | classifyTriangle(None,None,None) | TypeError("Three inputs required") |  TypeError("Three inputs required") | Pass |
+| testNoInput2 | classifyTriangle() | TypeError("Three inputs required") |  TypeError("Three inputs required") | Pass |
+
 ### Test Case Summary Matrix + Strategy
-|                | Test Run 1 | Test Run 2 | | |
+|                | Test Run 1 | Test Run 2 | Test Run 3 | Test Run 4 |
 | --- | --- | ---- | --- | --- |
-| Tests Planned  | 14 | | | |
-| Tests Executed | 14 | | | |
-| Tests Passed   | 6 | | | |
-| Defects Found  | 4 | | | |
-| Defects Fixed  | 4 | | | |
+| Tests Planned  | 12 | 14 | 14 | 18 |
+| Tests Executed | 12 | 14 | 14 | 18 |
+| Tests Passed   | 6 | 6 | 12 | 18 |
+| Defects Found  | 3 | 5 | 0 | 0 |
+| Defects Fixed  | 0 | 0 | 5 | 0 |
 
