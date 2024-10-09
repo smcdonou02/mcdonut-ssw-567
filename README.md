@@ -1,6 +1,6 @@
 # mcdonut-ssw-567
 ## Build Badge
-[![<smcdonou02>](https://circleci.com/gh/<smcdonou02>/<mcdonut-ssw-567>.svg?style=svg)](https://app.circleci.com/pipelines/github/<smcdonou02>/<mcdonut-ssw-567>?branch=main&filter=all)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/4Vk2cE4BsDcngWTovdvBA3/D9ZJ5G83yhHWRNVs7bS8nR/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/4Vk2cE4BsDcngWTovdvBA3/D9ZJ5G83yhHWRNVs7bS8nR/tree/main)
 ## Description
 README file for assignments in SSW 567
 ### Assignment 1 Deliverable 3
